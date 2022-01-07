@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Praticando JavaScript - Calculadora</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var numero1 = prompt("Insira o primeiro número: ");
+        var numero2 = prompt("Insira o segundo número: ");
+        var escolha = prompt("Escolha -> (1-Soma; 2-Subtração; 3-Multiplicação; 4-Divisão): ");
+        
+        if (escolha === '1'){
+            var resultadoOperacao = soma(numero1, numero2);
+        }else if(escolha === '2'){
+            var resultadoOperacao = subtrai(numero1, numero2);
+        }else if(escolha === '3'){
+            var resultadoOperacao = multiplica(numero1, numero2);
+        }else if(escolha === '4'){
+            var resultadoOperacao = divide(numero1, numero2);
+        }else{
+            alert("Opção errada!");
+        }
+
+        alert("O resultado da operação é: " + resultadoOperacao)
+       
+
+        function soma(numero1, numero2){
+            var resultado = 0;
+            
+            resultado = parseInt(numero1) + parseInt(numero2);
+
+            return resultado;
+        }
+        function subtrai(numero1, numero2){
+            var resultado = 0;
+            
+            resultado = parseInt(numero1) - parseInt(numero2);
+
+            return resultado;
+        }
+        function multiplica(numero1, numero2){
+            var resultado = 0;
+            
+            resultado = parseInt(numero1) * parseInt(numero2);
+
+            return resultado;
+        }
+        function divide(numero1, numero2){
+            var resultado = 0;
+            
+            resultado = parseInt(numero1) /parseInt(numero2);
+
+            return resultado;
+        }
+        
+    </script>    
+</body>
+</html>
