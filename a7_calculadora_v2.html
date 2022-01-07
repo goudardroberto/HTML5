@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <title>Praticando JavaScript - Calculadora</title>
+</head>
+<body>
+    <script type="text/javascript">
+        var numero1 = prompt("Insira o primeiro número: ");
+        var numero2 = prompt("Insira o segundo número: ");
+        var escolha = prompt("Escolha -> ('+'-Soma; '-'-Subtração; '*'-Multiplicação; '5'-Divisão): ");
+        
+        var resultadoOperacao = realizaOperacao(numero1, numero2, escolha);
+
+        alert("O resultado da operação é igual a: " + resultadoOperacao);
+
+        function realizaOperacao(numero1, numero2, escolha){
+
+            var resultado = 0;
+
+            // resultado = numero1 + eval(escolha) + numero2;
+            resultado = eval(numero1 + escolha + numero2);
+
+            return resultado;
+        }
+    </script>    
+</body>
+</html>
