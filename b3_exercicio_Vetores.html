@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício Vetores</title>
+</head>
+<body>
+    <script type="text/javascript">
+        /* - Solicite ao usuário que insira dois números inteiros positivos. 
+           - Utilize um vetor para armazenar esses dois números.
+           - Verifique se os números inseridos são inteiros positivos. Caso contrário, 
+           solicite ao usuário para inseri-los novamente.
+           - Divida os dois números inteiros positivos. 
+           - Imprima na tela o resultado da divisão.*/
+        var numeros = [];
+        
+        numeros[0] = solicitaPrimeiroNumero();
+
+        numeros[1] = solicitaSegundoNumero();
+
+        var resultadoDivisao = divida(numeros);
+
+        alert('O resultado da divisão é igual a: ' + resultadoDivisao);
+
+        /* Função Javascript que não recebe parâmetros */
+        function solicitaPrimeiroNumero(){
+
+            var numero1 = prompt('Insira o primeiro número: ');
+
+            if(numero1 < 0){
+                alert('O número precisa ser inteiro e positivo');
+
+                /* Este tipo de retorno, onde a própria função é chamada novamente, é conhecido como 
+                recursividade. */
+                return solicitaPrimeiroNumero();
+            }else{
+                return numero1;
+            }
+        }
+        function solicitaSegundoNumero(){
+            var numero2 = prompt('Insira o segundo número: ');
+
+            if(numero2 < 0){
+                alert('O número precisa ser inteiro e positivo');
+                return solicitaSegundoNumero();
+            }else{
+                return numero2;
+            }
+        }
+        /* Função Javascript que recebe parâmetros */
+        function divida(numeros){
+            var resultado = 0;
+
+            // Os números a serem divididos são acessados através dos índices do array
+
+            resultado = numeros[0] / numeros[1];
+            return resultado;
+        }
+    </script>
+</body>
+</html>
