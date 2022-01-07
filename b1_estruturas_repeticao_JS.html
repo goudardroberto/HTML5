@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de repetição</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // Exemplo 1
+        /*
+        for (var contador = 0; contador < 10; contador ++){
+
+            alert(contador)
+
+        }
+        */
+        // Exemplo 2
+        var frutas = ['Laranja', 'Uva', 'Pera']
+
+        /* Imprimindo na caixa de diálogo o conteúdo do array 'frutas' utilizando o laço 'for'
+        for(var i = 0; i < frutas.length; i++){
+            alert('Nome da fruta contida no Array: ' + frutas[i]);
+        }*/
+        /* Imprimindo na caixa de diálogo o conteúdo do array 'frutas' utilizando o laço 'for/in'*/
+        for(var fruta in frutas){
+            alert('Nome da fruta contida no Array: ' + frutas[fruta]);
+        }
+    </script>
+</body>
+</html>
