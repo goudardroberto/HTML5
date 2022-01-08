@@ -11,3 +11,5 @@
 – Como definir um parágrafo no documento HTML5
 
 - A tag OL (Ordered lists) vai criar uma lista ordenada. Utilizando os valores do parâmetro TYPE, você pode criar uma lista ordenada numérica (1), alfabética (a/A) ou em algarismos romanos (i/I). O parâmetro START da tag OL vai indicar onde vai começar a contagem dos itens. O parâmetro START aceita apenas valores numéricos, independente da maneira utilizada para numerar.
+
+- A tag UL (Unordered lists) vai criar uma lista com demarcadores ou lista não-ordenada. O parâmetro TYPE para OL suporta os valores CIRCLE, SQUARE ou DISC. Para a tag UL, o parâmetro START simplesmente não funciona. Podemos também criar hierarquia com listas, utilizando tags OL e UL aninhadas.
